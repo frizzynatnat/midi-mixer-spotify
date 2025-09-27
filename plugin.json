@@ -7,6 +7,10 @@
   "main": "lib/index.js",
   "icon": "circle.ico",
   "settings": {
+    "SpotifyPremiumWarning": {
+      "type": "status",
+      "label": "SPOTIFY PREMIUM REQUIRED TO USE THE SPOTIFY API"
+    },
     "SpotifyClientID": {
       "label": "Client ID",
       "type": "text",
@@ -28,6 +32,11 @@
       "label": "Refresh Token",
       "type": "password",
       "fallback": "None"
+    },
+    "SpotifyNotifications": {
+      "type": "toggle",
+      "label": "Enable Track Saved/Shuffle/Repeat notifications",
+      "fallback": false
     },
     "SpotifyExpressStatus": {
       "label": "Express server status",

@@ -1,6 +1,6 @@
 # Spotify
 
-Control spotify volume, skip tracks, play/pause, and add the current playing track to favourites.
+Control spotify volume, skip tracks, play/pause, shuffle, repeat and add the current playing track to favourites.
 
 # This will only work with a spotify premium account
 

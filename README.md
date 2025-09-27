@@ -1,6 +1,6 @@
 # Spotify
 
-Control spotify volume, skip tracks, play/pause, and add the current playing track to favourites. All with your midi device through Midi Mixer.
+Control spotify volume, skip tracks, play/pause, shuffle, repeat, and add the current playing track to favourites. All with your midi device through Midi Mixer.
 
 # This will only work with a spotify premium account
 
