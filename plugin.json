@@ -1,27 +1,28 @@
 {
   "$schema": "./node_modules/midi-mixer-plugin/plugin.schema.json",
-  "version": "1.1.4",
   "id": "ca.jaggernaut.midi-mixer.spotify",
   "name": "Spotify",
   "type": "node",
+  "version": "1.1.5",
+  "author": "Jaggernaut",
   "main": "lib/index.js",
   "icon": "circle.ico",
   "settings": {
     "SpotifyPremiumWarning": {
-      "type": "status",
-      "label": "SPOTIFY PREMIUM REQUIRED TO USE THE SPOTIFY API"
+      "label": "SPOTIFY PREMIUM REQUIRED TO USE THE SPOTIFY API",
+      "type": "status"
     },
     "SpotifyClientID": {
       "label": "Client ID",
+      "required": true,
       "type": "text",
-      "fallback": "None",
-      "required": true
+      "fallback": "None"
     },
     "SpotifyClientSecret": {
       "label": "Client Secret",
+      "required": true,
       "type": "password",
-      "fallback": "None",
-      "required": true
+      "fallback": "None"
     },
     "SpotifyAccessToken": {
       "label": "Access Token",
@@ -34,8 +35,8 @@
       "fallback": "None"
     },
     "SpotifyNotifications": {
-      "type": "toggle",
       "label": "Enable Track Saved/Shuffle/Repeat notifications",
+      "type": "toggle",
       "fallback": false
     },
     "SpotifyExpressStatus": {
@@ -47,6 +48,5 @@
       "label": "Run Login Server",
       "type": "button"
     }
-  },
-  "author": "Jaggernaut"
+  }
 }
