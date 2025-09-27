@@ -256,6 +256,7 @@ async function spotifyReq(
       res = await spotifyApi.getMyCurrentPlaybackState();
       recentDevice = res.body?.device?.id ?? recentDevice;
     }
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     await f(res!);
     return;
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -290,6 +291,7 @@ async function spotifyReq(
       res = await spotifyApi.getMyCurrentPlaybackState();
       recentDevice = res.body?.device?.id ?? recentDevice;
     }
+    // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     await f(res!);
   } catch (error) {
     log.debug("Retrying failed");
